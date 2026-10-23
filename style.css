@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquarda+Bastarda+9&family=Jersey+15&family=Press+Start+2P&display=swap');
 
 :root {
-    --base-color: #47498d;
+    --base-color: #6552c8;
     --text-color: #04062c;
-    --primary-color: #3a45b5;
-    --secondary-color: #4f516a;
-    --color-1: #5860d5;
-    --color-2:#000ecf;
-    --color-3:#15183e;
+    --primary-color: #1d2250;
+    --secondary-color: #181b49;
+    --color-1: #2a2f77;
+    --color-2:#3e4386;
+    --color-3:#545aa5;
 }
 
 * {
@@ -106,3 +106,114 @@ h1{
 .secondary {
     background-color: var(--secondary-color);
 }
+
+section{
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+section p{
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section#relik-of-bovinia{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+    "1img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5"
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+.grid-container img:hover{
+    scale: 1.05;
+}
+
+details{
+  margin-top: 1em;
+  background-color: var(--base-color);
+  border-radius: 1em;  
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family:jaquard
+}
+
+details p{
+    padding: 0 2em 2em 2em ;
+}
+
+footer{
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 988px){
+    header{
+        text-align: center;
+    }
+    header .text-container{
+        padding-top:0;
+    }
+}
+
+@media(max-width: 640px){
+    nav li{
+        display:none;
+    }
+
+    nav li:first-child,
+    nav li:last-child{
+        display:block;
+    }
+
+    header{
+        margin-top: 0;
+    }
+
+    .cta-button{
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .text-container p{
+        font-size: 1rem
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+}
+

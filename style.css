@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquarda+Bastarda+9&family=Jersey+15&family=Press+Start+2P&display=swap');
 
 :root {
-    --base-color: #6552c8;
-    --text-color: #04062c;
-    --primary-color: #1d2250;
-    --secondary-color: #181b49;
-    --color-1: #2a2f77;
-    --color-2:#3e4386;
-    --color-3:#545aa5;
+    --base-color: #163369;
+    --text-color: #0a1436;
+    --primary-color: #5f6bc7;
+    --secondary-color: #ad09ff;
+    --color-1: #29498f;
+    --color-2:#29498f;
+    --color-3:#121329;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html{
-   font-family: Jacquard,Bastarda,Jersey;
+   font-family: Jacquard, Bastarda, Jersey;
    color: var(--text-color);
 }
 
@@ -27,8 +26,8 @@ body{
     background-color: var(--base-color);
 }
 
-h1,h2,h3 {
-    font-family: Jacquard,Bastarda,Jersey;
+h1, h2, h3 {
+    font-family: Jacquard, Bastarda, Jersey;
 }
 
 nav {
@@ -39,25 +38,24 @@ nav {
 nav ul{
     display: flex;
     align-items: center;
-    list-style-type:none;
+    list-style-type: none;
     gap: 2em;
 }
 nav li:first-child {
     margin-right: auto;
-    font-family: Bastarda ,Jersey;
+    font-family: Bastarda, Jersey;
     font-weight: bold;
 }
 
 nav a {
     text-decoration: none;
     color: var(--text-color);
-
 }
 nav a:hover{
     text-decoration: underline;
 }
 
-header,section{
+header, section {
     margin: 2em auto;
     width: min(75em, 100%);
     background-color: var(--color-1);
@@ -70,7 +68,7 @@ header,section{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3em
+    gap: 3em;
 }
 
 header img{
@@ -85,7 +83,7 @@ header img{
 }
 
 h1{
-    font-size: 2.5rem
+    font-size: 2.5rem;
 }
 
 .text-container p {
@@ -96,9 +94,9 @@ h1{
 .cta-button {
     display: inline-block;
     text-decoration: none;
-    color: rgb(59, 77, 139);
+    color: rgb(22, 28, 51);
     background-color: var(--primary-color);
-    padding: .74em 1.25 em;
+    padding: .74em 1.25em;
     border-radius: .5em;
     font-weight: 600;
 }
@@ -127,11 +125,11 @@ section#relik-of-bovinia{
     margin-bottom: 3em;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows:1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "1img-1 img-1 img-2 img-3"
-    "img-1 img-1 img-4 img-5"
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
 }
 
 .grid-container img {
@@ -153,11 +151,11 @@ details{
 details summary {
     padding: 1em;
     font-size: 1.7rem;
-    font-family:jaquard
+    font-family: Jacquard;
 }
 
 details p{
-    padding: 0 2em 2em 2em ;
+    padding: 0 2em 2em 2em;
 }
 
 footer{
@@ -180,18 +178,18 @@ footer a:hover {
         text-align: center;
     }
     header .text-container{
-        padding-top:0;
+        padding-top: 0;
     }
 }
 
 @media(max-width: 640px){
     nav li{
-        display:none;
+        display: none;
     }
 
     nav li:first-child,
     nav li:last-child{
-        display:block;
+        display: block;
     }
 
     header{
@@ -204,16 +202,14 @@ footer a:hover {
     }
 
     .grid-container{
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     .text-container p{
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     h2{
         font-size: 1.5rem;
     }
-
 }
-
